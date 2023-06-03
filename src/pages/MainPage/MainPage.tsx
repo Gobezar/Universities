@@ -23,6 +23,8 @@ const MainPage: React.FC = () => {
         fetchCountries()
     }, [])
 
+    console.log (countries)
+
     return (
         <div className='mainPageWrapper'>
             <img className='logo' src="https://i.ibb.co/2nR1H9S/image-21.png" alt='logo' />
@@ -31,7 +33,7 @@ const MainPage: React.FC = () => {
                 <h3>Выбирайте желаемую страну из списка!</h3>
                 <div className='countriesList__wrapper'>
                     {countries?.map((c) => (
-                        <a className='mainPage__a' onClick={() => navigate(`/country/${c}`)}>{c}</a>
+                        <a key={c} className='mainPage__a' onClick={() => navigate(`/country/${c}`)}>{c}</a>
                     ))}
                 </div>
             </>
