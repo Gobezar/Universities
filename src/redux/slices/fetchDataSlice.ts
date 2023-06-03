@@ -5,13 +5,13 @@ import { IUniversity } from '../../models'
 
 
 export const fetchData = createAsyncThunk('fetch/fetchData', async () => {
-    const response = await axios.get<IUniversity[]>('http://universities.hipolabs.com/search')
+    const response = await axios.get<IUniversity[]>('https://universities.hipolabs.com/search')
     const result = (response.data)
     return result
 })
 
 export const fetchUniversities = createAsyncThunk('fetch/fetchUniversities', async (country: string | undefined) => {
-    const response = await axios.get<IUniversity[]>(`http://universities.hipolabs.com/search?country=${country}`)
+    const response = await axios.get<IUniversity[]>(`https://universities.hipolabs.com/search?country=${country}`)
     const result = (response.data)
     return result
 })
