@@ -11,7 +11,7 @@ export const fetchData = createAsyncThunk('fetch/fetchData', async () => {
 })
 
 export const fetchUniversities = createAsyncThunk('fetch/fetchUniversities', async (country: string | undefined) => {
-    const response = await axios.get<IUniversity[]>(`http://universities.hipolabs.com/search?country=${country}/`)
+    const response = await axios.get<IUniversity[]>(`http://universities.hipolabs.com/search?country=${country}`)
     const result = (response.data)
     return result
 })
