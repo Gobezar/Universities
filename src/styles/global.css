@@ -1,0 +1,17 @@
+
+
+body, html {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(90deg,#00ffff,#b58fd9,#b683de); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#00ffff,#b58fd9,#b683de); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#root {
+    box-sizing: border-box;
+    padding: 0px;
+    height: 100%;
+    margin: 0px;
+}
+
+

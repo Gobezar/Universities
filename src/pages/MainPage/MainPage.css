@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+
+.mainPageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 30px;
+}
+
+.logo {
+    width: 40%;
+    margin-top: 30px;
+}
+
+.mainPageWrapper h2 {
+    text-align: center;
+    color: #f1f1f1;
+    font-family: 'Amatic SC', cursive;
+    font-size: 65px;
+    margin: 30px;
+}
+
+.mainPageWrapper h3 {
+    text-align: center;
+    color: #f1f1f1;
+    font-family: 'Amatic SC', cursive;
+    font-size: 45px;
+    margin: 0px 0px 40px 0px;
+}
+
+.mainPage__a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border: 3px solid transparent;
+}
+
+.mainPage__a:hover {
+    border: 3px solid rgb(126, 20, 175);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+.countriesList__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+
+.mainPage__a:nth-child(odd) {
+    background-color: #f1f1f1;
+    margin: 10px;
+}
+
+.mainPage__a:nth-child(even) {
+    background-color: #e1e1e1;
+    margin: 10px;
+
+}
